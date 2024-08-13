@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "אתר הדר",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -82,11 +82,11 @@
       "enabled": true
     },
     "favicon": false,
-    "mbrsiteDomain": "ralqvfxcb9",
+    "mbrsiteDomain": "fbf9dbdyvg",
     "usedWebp": false,
     "cssOptimize": true,
     "lazyLoad": true,
-    "robotsSwitcher": false,
+    "robotsSwitcher": true,
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
     "siteUrl": "https://merkaz-lamida-a-t.com/",
@@ -98,7 +98,8 @@
     },
     "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LSDHT27FEH\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-LSDHT27FEH');\n</script>",
     "global_header_custom": "<!-- Meta Pixel Code -->\n<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '580333819575064');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=580333819575064&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Meta Pixel Code -->",
-    "global_footer_custom": "<script src=\"https://cdn.enable.co.il/licenses/enable-L279233byjisctr6-0724-61578/init.js\"></script>"
+    "global_footer_custom": "<script src=\"https://cdn.enable.co.il/licenses/enable-L279233byjisctr6-0724-61578/init.js\"></script>",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nDisallow: /admin/\nDisallow: /private/\nAllow: /images/\n"
   },
   "pages": {
     "index.html": {
@@ -2033,7 +2034,7 @@
       "settings": {
         "title": "הסדנאות שלנו מרכז למידה מא עד ת",
         "order": "1",
-        "meta_descr": ""
+        "meta_descr": "הסדנאות שלנו מרכז למידה מא עד ת|סדנאות בבאר שבע\nמרכז למידה מא-ת מרכז למידה בבאר שבע המרכז של הדר ניזרית המרכז מציע מגוון שירותים להכנה לכיתה א' ולסיוע בלימודים לתלמידים בכיתות ב'-ו':\n\nהכנה לכיתה א':\n\nפיתוח מיומנויות דיוק ושטף: שיפור מיומנויות קריאה וכתיבה, תוך התמקדות באותיות, הברות ומילים.\nחיזוק מיומנויות חשיבה: פיתוח חשיבה לוגית, פתרון בעיות וקבלת החלטות.\nטיפוח מיומנויות חברתיות: הכנה להשתלבות חברתית בבית הספר, פיתוח כישורי תקשורת ועבודה בצוות.\nהעלאת הביטחון העצמי: חיזוק האמונה ביכולות הלימודיות והאישיות של הילד.\nסיוע בלימודים לתלמידים בכיתות ב'-ו':\n\nעזרה בשיעורי בית: סיוע בהבנת חומר הלימודים, בביצוע עבודות ובפתרון בעיות.\nלמידה בקבוצות קטנות: שיעורי עזר מותאמים אישית, המאפשרים לתלמידים לקבל תשומת לב אישית מהמורה.\nשיפור מיומנויות למידה: פיתוח מיומנויות למידה חשובות, כגון ניהול זמן, קריאת טקסטים מורכבים וכתיבה אקדמית.\nקידום למידה עצמאית: עידוד תלמידים לקחת אחריות על הלמידה שלהם וללמוד באופן עצמאי."
       },
       "components": [
         {
