@@ -3,3 +3,4 @@ Disallow: /cgi-bin
 Disallow: /admin/
 Disallow: /private/
 Allow: /images/
+

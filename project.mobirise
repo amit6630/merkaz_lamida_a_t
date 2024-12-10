@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "אתר הדר",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -82,7 +82,7 @@
       "enabled": true
     },
     "favicon": false,
-    "mbrsiteDomain": "fbf9dbdyvg",
+    "mbrsiteDomain": "1id2mrwggf",
     "usedWebp": false,
     "cssOptimize": true,
     "lazyLoad": true,
@@ -99,7 +99,7 @@
     "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LSDHT27FEH\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-LSDHT27FEH');\n</script>",
     "global_header_custom": "<!-- Meta Pixel Code -->\n<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '580333819575064');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=580333819575064&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Meta Pixel Code -->",
     "global_footer_custom": "<script src=\"https://cdn.enable.co.il/licenses/enable-L279233byjisctr6-0724-61578/init.js\"></script>",
-    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nDisallow: /admin/\nDisallow: /private/\nAllow: /images/\n"
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nDisallow: /admin/\nDisallow: /private/\nAllow: /images/\n\n"
   },
   "pages": {
     "index.html": {
@@ -591,14 +591,28 @@
               }
             },
             ".content-wrapper": {
+              "display": "flex",
+              "flex-direction": "column",
               "@media (max-width: 992px)": {
+                ".item-wrapper": {
+                  "display": "flex",
+                  "flex-direction": "column",
+                  ".item-img": {
+                    "order": "-1"
+                  },
+                  ".mbr-text": {
+                    "order": "1"
+                  }
+                },
                 "margin-bottom": "48px"
               },
               ".mbr-section-subtitle": {
                 "margin-bottom": "32px"
               },
               ".mbr-text": {
-                "margin-bottom": "32px"
+                "margin-bottom": "32px",
+                "text-align": "center",
+                "color": "#645600"
               },
               ".tags-wrapper": {
                 "margin-bottom": "16px",
@@ -746,12 +760,26 @@
             ".mbr-section-subtitle, .mbr-section-btn, .tags-wrapper": {
               "text-align": "center",
               "color": "#645600"
+            },
+            "@media (max-width: 768px)": {
+              ".row": {
+                "display": "flex",
+                "flex-direction": "column-reverse"
+              },
+              ".col-12.col-lg-7": {
+                "order": "1"
+              },
+              ".col-12.col-lg-4": {
+                "order": "2"
+              }
             }
           },
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider01 mbr-embla resumem5\" group=\"Sliders & Galleries\" plugins=\"embla\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Tags\" name=\"showTags\">\n        <input type=\"range\" inline title=\"Tags Amount\" name=\"tags\" min=\"1&quot;\" max=\"3\" step=\"1\" value=\"1\" condition=\"showTags\">\n        <input type=\"color\" title=\"Border Color\" value=\"#b7a284\" name=\"tag\" condition=\"showTags\" selected>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Shadow Color\" value=\"#b7a284\" name=\"shadow\" selected>\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked>\n        <input type=\"range\" title=\"Interval\" name=\"interval\" min=\"1\" max=\"10\" value=\"3\" step=\"1\" condition=\"autoplay\">\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\" checked>\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked>\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax required>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f0f0f0\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>הערכה שלי</b></h2>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-4\">\n                <div class=\"content-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn, .tags-wrapper\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">ערכה לכיתה א</h3>\n                    <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">ערכת הכנה לכיתה א .ערכה זו כוללת משחקים דידקטים רבים וחוברות מוכנות בשפה וחשבון המשלבים בתוכום את כל מה שילד צריך לקראת עלייתו לכיתה א<br></p>\n                    <div class=\"tags-wrapper\" mbr-if=\"showTags\">\n                        <div class=\"tags-wrap\">\n                            <p class=\"mbr-tag mbr-fonts-style\" data-app-selector=\".mbr-tag\" mbr-theme-style=\"display-4\">לרכישת הערכה</p>\n                            <p class=\"mbr-tag mbr-fonts-style\" data-app-selector=\".mbr-tag\" mbr-theme-style=\"display-4\" mbr-if=\"tags > 1\">\n                                Logo\n                            </p>\n                            <p class=\"mbr-tag mbr-fonts-style\" data-app-selector=\".mbr-tag\" mbr-theme-style=\"display-4\" mbr-if=\"tags > 2\">\n                                Content\n                            </p>\n                        </div>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"https://paypage.takbull.co.il/n05s\" data-app-placeholder=\"Type Text\" target=\"_blank\">למעבר לרכישה</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-7\">\n                <div class=\"embla\" data-loop=\"{{loop}}\" data-auto-play=\"{{autoplay}}\" data-auto-play-interval=\"{{interval}}\" data-draggable=\"{{draggable}}\" data-skip-snaps=\"true\" data-align=\"center\" data-contain-scroll=\"trimSnaps\">\n                    <div class=\"embla__viewport\">\n                        <div class=\"embla__container\">\n                            \n                            \n                            <div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"slide-content\">\n                                    <div class=\"item-wrapper\">\n                                        <div class=\"item-img\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/img-3868-837x558.jpg\" alt data-slide-to=\"0\" data-bs-slide-to=\"0\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div><div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"slide-content\">\n                                    <div class=\"item-wrapper\">\n                                        <div class=\"item-img\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/img-3878-837x1256.jpeg\" alt data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div><div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"slide-content\">\n                                    <div class=\"item-wrapper\">\n                                        <div class=\"item-img\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/img-3879-837x1255.jpg\" alt data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div><div class=\"embla__slide slider-image item active\" mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                <div class=\"slide-content\">\n                                    <div class=\"item-wrapper\">\n                                        <div class=\"item-img\">\n                                            <img src=\"@PROJECT_PATH@/assets/images/-whatsapp-2024-07-30-08.33.37-d7ff91cb-837x558.jpg\" alt data-slide-to=\"3\" data-bs-slide-to=\"3\">\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <button class=\"embla__button embla__button--prev\">\n                        <span class=\"mobi-mbri mobi-mbri-left mbr-iconfont\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Previous</span>\n                    </button>\n                    <button class=\"embla__button embla__button--next\">\n                        <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Next</span>\n                    </button>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "slider01-1s",
           "_isUserblock": true,
           "_cid": "u93PPr1cig",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
