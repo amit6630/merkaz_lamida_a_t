@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "אתר הדר",
-    "currentPage": "card.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -111,7 +111,7 @@
     },
     "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LSDHT27FEH\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-LSDHT27FEH');\n</script>",
     "global_header_custom": "<meta name=\"google-site-verification\" content=\"dJu_zH8KHT9RL8dxfhejqZdbx5c8rBFW4AM38qDERwo\">\n<!-- Meta Pixel Code -->\n<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '580333819575064');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=580333819575064&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Meta Pixel Code -->\n<style id=\"rtl-text\">p,h1,h2,h3,h4,h5,h6,li,label,input,textarea,blockquote,.user_name,.user_prof,.copyright,.dropdown-item{direction:rtl;unicode-bidi:plaintext}</style>\n",
-    "global_footer_custom": "<script src=\"https://cdn.enable.co.il/licenses/enable-L279233byjisctr6-0724-61578/init.js\"></script>",
+    "global_footer_custom": "",
     "robotsText": "User-agent: *\nAllow: /\n\nSitemap: https://merkaz-lamida-a-t.com/sitemap.xml\n"
   },
   "pages": {
